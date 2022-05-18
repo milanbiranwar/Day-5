@@ -6,24 +6,50 @@ using System.Threading.Tasks;
 
 namespace Practice
 {
-    internal class EvenOdd
+   internal class EvenOddNumbers
     {
-        public static void evenandodd()
+        public static void EvenOdd()
         {
-			Random s = new Random();
+           int num = 0;
+                
+            Console.WriteLine("Enter 0 for Odd Numbers Or 1 for Even Numbers ");
+                num = Convert.ToInt32(Console.ReadLine());
+           // int num = int.Parse(Console.ReadLine());
+            //Random random = new Random();
+            //int num=random.Next(0, 2);
+            if (num == 0)
 
-			Console.WriteLine("Enter a number: ");
-			int number = s.Next();
+            {
+                Console.WriteLine("Odd Numbers are");
+                for (int i = 0; i <= 100; i++)
+                {
 
-			if (number % 2 == 0)
-			{
-				Console.WriteLine(number + " is even");
-			}
-			else
-			{
-				Console.WriteLine(number + " is odd");
-			}
-		}
+                    if (i % 2 == 0)
+                    {
+                        continue;
+                    }
+                    Console.WriteLine(i);
+                }
+
+            }
+            else 
+
+
+            {
+               
+                Console.WriteLine("Even Numbers are");
+                for (int i = 0; i <= 100; i++)
+                {
+                    
+                    if (i % 2 == 1)
+                    {
+                        continue;
+                    }
+                    Console.WriteLine(i);
+                }
+
+            }
+        
 
 	}
 }
