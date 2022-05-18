@@ -8,16 +8,14 @@ namespace Practice
 {
     internal class Factors
     {
-        public static void factor()
-        {
-			Random sc = new Random();
-
+               public static void factor()
+               {
+			int n;
 			Console.Write("Enter Your Number : ");
-			int n = sc.Next();
-
-
+			n = Convert.ToInt32(Console.ReadLine());
 			// Printing the prime factors
 			Console.Write("The Prime Factors of " + n + " are : ");
+
 
 			int i = 2;
 			while (n > 1)
@@ -32,9 +30,11 @@ namespace Practice
 					i++;
 				}
 			}
+			
 			Console.WriteLine(" ");
-		}
+			Console.ReadLine();
+	       }
+      }
+		      
+}
 
-	}
-}
-}
