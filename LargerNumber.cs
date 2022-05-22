@@ -10,19 +10,15 @@ namespace Practice
     {
         public static void laegernumber()
         {
-			Random s = new Random;
-
-			//Taking values from user::
 			Console.WriteLine("Enter the first number: ");
-			int num1 = s.Next();
+			int num1 = Convert.ToInt32(Console.ReadLine());
 
 			Console.WriteLine("Enter the second number: ");
-			int num2 = s.Next();
+			int num2 = Convert.ToInt32(Console.ReadLine());
 
 			Console.WriteLine("Enter the third number: ");
-			int num3 = s.Next();
-
-			//if_else statements::
+			int num3 = Convert.ToInt32(Console.ReadLine());
+			
 			if (num1 > num2)
 			{
 				Console.WriteLine(num1 + " is larger value");
