@@ -10,21 +10,14 @@ namespace Practice
     {
         public static void quotiandremen()
         {
-            Random s = new Random();
-
-            //Taking values from user
             Console.WriteLine("Enter Your Dividend Number: ");
-            int num1 = s.Next();
+            int num1=Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Enter Your Divisor Number: ");
-            int num2 = s.Next();
-
-            //To perform the operation
-            Console.WriteLine("_________________________________________________________________________");
+           int num2=Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Quotient = " + num1 / num2);
             Console.WriteLine("Remainder= " + num1 % num2);
-
         }
     }
 }
